@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  # Base de données MySQL pour le développement
+  mysql-dev:
+    image: mysql:8.0
+    container_name: bibliotheque_mysql_dev
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: bibliotheque
+      MYSQL_USER: root
+      MYSQL_PASSWORD: Aiman2003@
+      MYSQL_ROOT_PASSWORD: Aiman2003@
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_dev_data:/var/lib/mysql
+      - ./backend/database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+    networks:
+      - bibliotheque_dev_network
+
+volumes:
+  mysql_dev_data:
+
+networks:
+  bibliotheque_dev_network:
+    driver: bridge
