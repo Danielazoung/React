@@ -1,6 +1,6 @@
-# 📚 Plateforme de Gestion de Bibliothèque 2IE
+#  Plateforme de Gestion de Bibliothèque 2IE
 
-**Projet étudiant 2IE/2025** - Application web complète pour la gestion d'une bibliothèque universitaire
+**Projet étudiant 2IE/2025** - Application web pour la gestion d'une bibliothèque universitaire
 
 [![Docker](https://img.shields.io/badge/Docker-Containerized-blue)](https://docker.com)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org)
@@ -8,23 +8,23 @@
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)](https://mysql.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)](https://typescriptlang.org)
 
-## 🎯 Vue d'ensemble
+##  Vue d'ensemble
 
 Plateforme web moderne permettant aux étudiants de gérer leurs emprunts de livres avec une interface intuitive et un système d'administration complet.
 
-### ✨ Fonctionnalités principales
+###  Fonctionnalités principales
 
-- 🔐 **Authentification sécurisée** avec JWT
-- 📖 **Catalogue de livres** avec recherche avancée
-- 📚 **Système d'emprunt** et de retour
-- 👥 **Gestion des utilisateurs** (étudiants/admin)
-- 📊 **Dashboard administrateur** avec statistiques
-- ⭐ **Système de notation** et commentaires
-- 📱 **Interface responsive** mobile-first
+-  **Authentification sécurisée** avec JWT
+-  **Catalogue de livres** avec recherche avancée
+-  **Système d'emprunt** et de retour
+-  **Gestion des utilisateurs** (étudiants/admin)
+-  **Dashboard administrateur** avec statistiques
+-  **Système de notation** et commentaires
+-  **Interface responsive** mobile-first
 
-## 🚀 Démarrage rapide
+##  Démarrage rapide
 
-### Pour les professeurs/évaluateurs
+### Pour le professeur
 ```bash
 # Démarrage automatique avec le script de démonstration
 ./demo_professeur.sh
