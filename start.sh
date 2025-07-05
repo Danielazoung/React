@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Démarrage de la Plateforme de Gestion de Bibliothèque"
+echo " Démarrage de la Plateforme de Gestion de Bibliothèque"
 echo "========================================================"
 
 # Couleurs
@@ -32,7 +32,7 @@ echo -e "\n🌟 Lancement des serveurs..."
 
 # Fonction pour tuer les processus en arrière-plan à la fin
 cleanup() {
-    echo -e "\n🛑 Arrêt des serveurs..."
+    echo -e "\n Arrêt des serveurs..."
     kill $BACKEND_PID $FRONTEND_PID 2>/dev/null
     exit 0
 }
@@ -57,16 +57,16 @@ FRONTEND_PID=$!
 cd ..
 
 # Affichage des informations
-echo -e "\n✅ Application démarrée avec succès!"
-echo -e "📱 Frontend: ${GREEN}http://localhost:3000${NC}"
-echo -e "🔧 Backend: ${GREEN}http://localhost:3001${NC}"
-echo -e "📖 API Documentation: ${GREEN}http://localhost:3001${NC}"
+echo -e "\n Application démarrée avec succès!"
+echo -e " Frontend: ${GREEN}http://localhost:3000${NC}"
+echo -e " Backend: ${GREEN}http://localhost:3001${NC}"
+echo -e " API Documentation: ${GREEN}http://localhost:3001${NC}"
 echo ""
-echo -e "👤 Compte administrateur:"
+echo -e " Compte administrateur:"
 echo -e "   Email: ${YELLOW}admin@bibliotheque.com${NC}"
 echo -e "   Mot de passe: ${YELLOW}admin123${NC}"
 echo ""
-echo -e "⚠️  Appuyez sur ${RED}Ctrl+C${NC} pour arrêter les serveurs"
+echo -e "  Appuyez sur ${RED}Ctrl+C${NC} pour arrêter les serveurs"
 
 # Attendre que l'utilisateur arrête l'application
 wait

@@ -8,12 +8,12 @@ echo "============================================================="
 
 # Vérifier que Docker est installé
 if ! command -v docker &> /dev/null; then
-    echo "❌ Docker n'est pas installé. Veuillez installer Docker d'abord."
+    echo " Docker n'est pas installé. Veuillez installer Docker d'abord."
     exit 1
 fi
 
 if ! command -v docker-compose &> /dev/null; then
-    echo "❌ Docker Compose n'est pas installé. Veuillez installer Docker Compose d'abord."
+    echo " Docker Compose n'est pas installé. Veuillez installer Docker Compose d'abord."
     exit 1
 fi
 
@@ -54,17 +54,17 @@ fi
 echo "🔧 Test Backend..."
 sleep 5
 if curl -f http://localhost:3001/health > /dev/null 2>&1; then
-    echo "✅ Backend fonctionne"
+    echo " Backend fonctionne"
 else
-    echo "❌ Backend ne répond pas"
+    echo " Backend ne répond pas"
 fi
 
 # Test Frontend
-echo "🌐 Test Frontend..."
+echo " Test Frontend..."
 if curl -f http://localhost:3000 > /dev/null 2>&1; then
-    echo "✅ Frontend fonctionne"
+    echo " Frontend fonctionne"
 else
-    echo "❌ Frontend ne répond pas"
+    echo " Frontend ne répond pas"
 fi
 
 echo ""

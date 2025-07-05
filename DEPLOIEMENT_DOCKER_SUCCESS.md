@@ -27,7 +27,7 @@
 - **Image :** `mysql:8.0`
 - **Port :** `3306`
 - **Base :** `bibliotheque`
-- **Statut :** ✅ OPÉRATIONNEL
+- **Statut :**  OPÉRATIONNEL
 
 ## 🔧 Configuration Docker
 

@@ -3,11 +3,11 @@
 # Script d'initialisation de la base de données avec données de base
 # Date: 2025-07-04
 
-echo "🚀 Initialisation de la base de données pour Docker..."
+echo " Initialisation de la base de données pour Docker..."
 echo "====================================================="
 
 # Attendre que MySQL soit prêt
-echo "⏳ Attente de MySQL..."
+echo " Attente de MySQL..."
 sleep 10
 
 # Variables
@@ -16,7 +16,7 @@ DB_USER=${DB_USER:-bibliotheque_user}
 DB_PASSWORD=${DB_PASSWORD:-bibliotheque_password}
 DB_NAME=${DB_NAME:-bibliotheque}
 
-echo "📊 Insertion des données de base..."
+echo " Insertion des données de base..."
 
 # Insertion de l'administrateur par défaut
 mysql -h $DB_HOST -u $DB_USER -p$DB_PASSWORD $DB_NAME << EOF
@@ -40,5 +40,5 @@ INSERT IGNORE INTO livres (titre, auteur, ISBN, categorie_id, description, nombr
 
 EOF
 
-echo "✅ Données de base insérées avec succès!"
-echo "🎉 Base de données prête pour utilisation!"
+echo " Données de base insérées avec succès!"
+echo " Base de données prête pour utilisation!"
